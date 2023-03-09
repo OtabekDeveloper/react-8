@@ -1,0 +1,49 @@
+import React, { useState } from 'react'
+import './Navbar.css'
+import {BsFillGrid3X3GapFill} from 'react-icons/bs'
+import {GiCheckedShield} from 'react-icons/gi'
+import {MdLocationPin} from 'react-icons/md'
+import {FaShoppingCart} from 'react-icons/fa'
+import {FaHome} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState (false);
+
+
+
+
+return (
+  <>
+  
+      <div className="navbar">
+          
+             <span className="nav-logo">Credit.shop <i> <GiCheckedShield/></i> </span>
+              <div className= {`nav-items ${isOpen && "open"}`}>
+                  <Link to="/asosiy">Asosiy </Link>
+                  <Link to="/maxsulotlar">Maxsulotlar </Link>
+                  
+              </div>
+              <span className='mobile_uy'> <i> <FaHome/> </i> </span>
+              <span className='language'>uz|ru</span>
+
+
+               <Link to="/Xarita" className="xarita"> <i> <MdLocationPin/></i>  </Link>
+               <Link to="/Karzinka" className="karzinka"> <i> <FaShoppingCart/></i>  </Link>
+
+              <div className={`nav-toggle ${isOpen && "open"}`}
+                  onClick={()=> setIsOpen (!isOpen)}>
+                      <BsFillGrid3X3GapFill/>
+              </div>
+
+          
+      </div>
+
+  
+  </>
+);
+    
+ 
+};
+
+export default Navbar

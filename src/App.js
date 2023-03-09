@@ -1,6 +1,15 @@
+import { BrowserRouter } from 'react-router-dom';
+import AddRoutes from './router/AddRoutes';
+
 function App() {
   return (
-    <><h1>Home</h1></>
+      
+        <BrowserRouter>
+          <AddRoutes />
+        
+        </BrowserRouter>
+      
+     
   );
 }
 

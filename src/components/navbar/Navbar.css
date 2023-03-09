@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(238, 116, 30, 1);
+}
+.navbar > .nav-logo{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px;
+    margin-left: 100px;
+    color: #ffffff;
+}
+.navbar > .nav-items > a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    left: 80px;
+    opacity: 0.9;
+    
+}
+
+.navbar > .nav-items{
+    margin-right: 185px;
+}
+
+.navbar > a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+}
+.navbar > .xarita {
+    margin-left: 360px;
+    font-size: 25px;
+}
+
+.navbar > .karzinka {
+    margin-right: 150px;
+    font-size: 25px;
+}
+
+.navbar .language {
+    position: relative;
+    left: 150px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navbar > .mobile_uy{
+    display: none;
+}
+
+.navbar > .nav-items > a:hover{
+    opacity: 1;
+} 
+
+.navbar > .nav-items > a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all .45s;
+}
+
+.navbar > .nav-items > a:hover::before{
+    width: 100%;
+}
+
+.navbar > .nav-toggle{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    .navbar{
+        height: 45px;
+    }
+
+    .navbar > .nav-logo {
+        margin: 15px;
+        font-size: 15px;
+    }
+    .navbar > .nav-logo > i {
+        display: none;
+    }
+
+    .navbar > .xarita{
+        margin: 0;
+        font-size: 18px;
+        position: relative;
+        left: 80px;
+    }
+    .navbar > .karzinka{
+        margin: 0;
+        font-size: 18px;
+        position: relative;
+        left: 55px;
+    }
+
+    .navbar .language{
+        left: 100px;
+    }
+
+    .navbar > .mobile_uy{
+        display: flex;
+        position: relative;
+        right: 20px;
+        top: 1px;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .navbar > .nav-items{
+        position: absolute;
+        top: 45px;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        width: 100%;
+        background: rgb(243, 146, 77);
+        transform: translateX(-100%);
+        transition: all .45s;
+    }
+
+    .navbar > .nav-items.open{
+        transform: translateX(0);
+    }
+
+    .navbar > .nav-items > a::before{
+        background: transparent;
+    }
+
+    .navbar > .nav-toggle{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #ffffff;
+        position: relative;
+        top: 0px;
+        left: -210px;
+    }
+}
