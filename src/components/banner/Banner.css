@@ -1,0 +1,180 @@
+.banner_container{
+    width: 100%;
+    height: 900px;
+    background: #E5E5E5;
+}
+
+.banner_1{
+    width: 100%;
+    height: 350px;
+    background: rgba(238, 116, 30, 0.5);
+    color: #ffffff;
+    padding: 50px;
+    position: relative;
+}
+.banner_1_title{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 500px;
+}
+
+.banner_1_desc{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 500px;
+}
+
+.banner_passport{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.banner_2{
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 950px;
+    height: 180px;
+    position: relative;
+    top: 60px;
+    left: 120px;
+}
+
+.banner_2_desc{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: #EE741E;
+    width: 550px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.banner_saly{
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+
+.banner_3{
+    position: relative;
+    width: 646px;
+    height: 150px;
+    left: 250px;
+    top: 120px;
+    margin-bottom: 100px;
+    background: #EE741E;
+    border-radius: 30px;
+}
+
+.banner_3_desc{
+    position: absolute;
+    width: 400px;
+    height: 58px;
+    left: 35px;
+    top: 40px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.banner_ellipse{
+    position: absolute;
+    top: 30px;
+    right: 70px;
+}
+
+/* Media part */
+
+@media only screen and (max-width: 600px){
+    .banner_container{
+        height: 770px;
+    }
+    .banner_1{
+        height: 400px;
+    }
+    .banner_passport{
+        width: 160px;
+        height: 160px;
+        right: 105px;
+        top: 30px;
+    }
+    .banner_1_title{
+        width: 220px;
+        font-size: 26px;
+        position: absolute;
+        top: 195px;
+
+    }
+    .banner_1_desc{
+        width: 309px;
+        font-size: 15px;
+        margin: 0;
+        position: absolute;
+        top: 260px;
+        line-height: 17px;
+        left: 45px;
+        text-align: center;
+    }
+    .banner_2{
+        width: 350px;
+        height: 90px;
+        left: 18px;
+        top: 30px;
+    }
+    .banner_2_desc{
+        width: 230px;
+        height: 60px;
+        font-size: 12px;
+        line-height: 14px;
+        top: 15px;
+        left: 30px;
+    }
+    .banner_saly{
+        width: 70px;
+        height: 70px;
+        right: 40px;
+        top: 10px;
+    }
+    .banner_3{
+        width: 250px;
+        height: 180px;
+        top: 70px;
+        left: 70px;
+    }
+    .banner_ellipse{
+        width: 68px;
+        height: 68px;
+        top: 20px;
+        right: 88px;
+    }
+    .banner_3_desc{
+        width: 190px;
+        height: 60px;
+        font-size: 12px;
+        line-height: 14px;
+        top: 110px;
+    }
+}

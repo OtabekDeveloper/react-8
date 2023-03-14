@@ -18,18 +18,18 @@ return (
   
       <div className="navbar">
           
-             <span className="nav-logo">Credit.shop <i> <GiCheckedShield/></i> </span>
+             <span className="nav-logo">Credit.shop <i className='menu_icon'> <GiCheckedShield/></i> </span>
               <div className= {`nav-items ${isOpen && "open"}`}>
-                  <Link to="/asosiy">Asosiy </Link>
-                  <Link to="/maxsulotlar">Maxsulotlar </Link>
+                  <Link to="/" className='menu_link'>Home </Link>
+                  <Link to="/products" className='menu_link'>Products </Link>
                   
               </div>
               <span className='mobile_uy'> <i> <FaHome/> </i> </span>
               <span className='language'>uz|ru</span>
 
 
-               <Link to="/Xarita" className="xarita"> <i> <MdLocationPin/></i>  </Link>
-               <Link to="/Karzinka" className="karzinka"> <i> <FaShoppingCart/></i>  </Link>
+               <Link to="/contact" className="contact"> <i> <MdLocationPin/></i>  </Link>
+               <Link to="/cart" className="cart"> <i> <FaShoppingCart/></i>  </Link>
 
               <div className={`nav-toggle ${isOpen && "open"}`}
                   onClick={()=> setIsOpen (!isOpen)}>

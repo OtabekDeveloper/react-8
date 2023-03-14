@@ -17,7 +17,7 @@
     margin-left: 100px;
     color: #ffffff;
 }
-.navbar > .nav-items > a{
+.navbar > .nav-items > .menu_link{
     color: #ffffff;
     font-size: 15px;
     text-decoration: none;
@@ -32,7 +32,7 @@
     margin-right: 185px;
 }
 
-.navbar > a {
+.navbar > .contact , .navbar > .cart  {
     color: #ffffff;
     font-size: 15px;
     text-decoration: none;
@@ -40,12 +40,12 @@
     position: relative;
     opacity: 0.9;
 }
-.navbar > .xarita {
+.navbar > .contact{
     margin-left: 360px;
     font-size: 25px;
 }
 
-.navbar > .karzinka {
+.navbar >  .cart {
     margin-right: 150px;
     font-size: 25px;
 }
@@ -61,11 +61,11 @@
     display: none;
 }
 
-.navbar > .nav-items > a:hover{
+.navbar > .nav-items > .menu_link:hover{
     opacity: 1;
 } 
 
-.navbar > .nav-items > a::before{
+.navbar > .nav-items > .menu_link::before{
     content: "";
     position: absolute;
     left: 0;
@@ -76,7 +76,7 @@
     transition: all .45s;
 }
 
-.navbar > .nav-items > a:hover::before{
+.navbar > .nav-items > .menu_link:hover::before{
     width: 100%;
 }
 
@@ -97,17 +97,17 @@
         margin: 15px;
         font-size: 15px;
     }
-    .navbar > .nav-logo > i {
+    .navbar > .nav-logo > .menu_icon {
         display: none;
     }
 
-    .navbar > .xarita{
+    .navbar > .contact{
         margin: 0;
         font-size: 18px;
         position: relative;
         left: 80px;
     }
-    .navbar > .karzinka{
+    .navbar > .cart{
         margin: 0;
         font-size: 18px;
         position: relative;
@@ -143,7 +143,7 @@
         transform: translateX(0);
     }
 
-    .navbar > .nav-items > a::before{
+    .navbar > .nav-items > .menu_link::before{
         background: transparent;
     }
 
