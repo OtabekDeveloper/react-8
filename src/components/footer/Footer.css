@@ -15,7 +15,7 @@
     width: 300px;
 }
 
-.footer > .up_footer > .part_1 > a{
+.footer > .up_footer > .part_1 > .footer_menu{
     text-decoration: none;
     color: #ffffff;
     display: flex;
@@ -24,7 +24,7 @@
     width: 250px;
 }
 
-.footer > .up_footer > .part_1 > h1{
+.footer > .up_footer > .part_1 > .footer_link_title{
     width: 250px;
     padding: 40px 0px 15px 0px;
     margin-left: 15px;
@@ -37,7 +37,7 @@
     text-align: center;
 }
 
-.footer > .up_footer > .part_2 > i{
+.footer > .up_footer > .part_2 > .footer_tel{
     text-decoration: none;
     color: #ffffff;
     display: flex;
@@ -47,7 +47,7 @@
     width: 250px;
 }
 
-.footer > .up_footer > .part_2 > h1{
+.footer > .up_footer > .part_2 > .footer_tel_title{
     width: 270px;
     padding: 40px 0px 15px 0px;
     margin-left: 15px;
@@ -60,7 +60,7 @@
     text-align: center;
 }
 
-.footer > .up_footer > .part_3 > a {
+.footer > .up_footer > .part_3 > .footer_social_link {
     text-decoration: none;
     color: #ffffff;
     justify-content: space-between;
@@ -73,13 +73,13 @@
  
 }
 
-.footer > .up_footer > .part_3 >  a:hover {
+.footer > .up_footer > .part_3 >  .footer_social_link:hover {
    color: rgb(13, 245, 13);
    transform: translateY(-20px);
   
 }
 
-.footer > .up_footer > .part_3 > h1{
+.footer > .up_footer > .part_3 > .footer_social_title{
     width: 250px;
     padding: 40px 0px 15px 0px;
     margin-left: 15px;
@@ -113,38 +113,38 @@
     .footer > .up_footer{
         padding: 0px 8px;
     }
-    .footer > .up_footer > .part_1 > a{
+    .footer > .up_footer > .part_1 > .footer_menu{
         width: 100px;
         margin: 8px;
         font-size: 10px;
     }
-    .footer > .up_footer > .part_1 > h1{
+    .footer > .up_footer > .part_1 > .footer_link_title{
         width: 100px;
         padding: 15px 0px 8px 0px;
         margin-left: 10px;
         font-weight: 600;
         font-size: 13px;
     }
-    .footer > .up_footer > .part_2 > i{
+    .footer > .up_footer > .part_2 > .footer_tel{
         width: 100px;
         margin: 8px;
         font-size: 10px;
     }
-    .footer > .up_footer > .part_2 > h1{
+    .footer > .up_footer > .part_2 > .footer_tel_title{
         width: 110px;
         padding: 15px 0px 8px 0px;
         margin-left: 10px;
         font-weight: 600;
         font-size: 13px;
     }
-    .footer > .up_footer > .part_3 > a{
+    .footer > .up_footer > .part_3 > .footer_social_link{
         width: 100px;
         margin: 3px;
         font-size: 15px;
         top: 55px;
         right: 7px;
     }
-    .footer > .up_footer > .part_3 > h1{
+    .footer > .up_footer > .part_3 > .footer_social_title{
         width: 100px;
         padding: 15px 0px 8px 0px;
         margin-left: 10px;
